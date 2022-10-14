@@ -491,12 +491,9 @@ select {
   text-align: left;
   padding: 5px 10px;
 }
-.job-category 
-
 /*================================================
 06 - BTN TOP CSS
 ==================================================*/
-
 .btntoTop {
   color: #ffffff;
   vertical-align: middle;
@@ -809,7 +806,7 @@ header ul li:hover ul li:hover ul {
   position: relative;
   width: 100%;
   background: linear-gradient(248.78deg, #050C38 8.36%, #0E164E 103.63%);
-  padding: 150px 0 50px;
+  padding: 100px 0 10px;
 }
 
 .banner-single-slider {
@@ -1022,7 +1019,7 @@ header ul li:hover ul li:hover ul {
   width: 50px;
 }
 .author {
-  color: #CB4059;
+  color: var(--bs-violet);
 }
 .backIcon {
   border-radius: 50%;
@@ -1180,7 +1177,7 @@ a.read-more:hover {
   /* background: #fff; */
   border: 0;
   box-shadow: 0px 20px 40px rgb(0 0 0 / 5%);
-  padding: 20px;
+  padding: 15px;
   border-radius: 4px;
 }
 .feature-category .tab-content1:hover,
@@ -1217,6 +1214,12 @@ a.read-more:hover {
   border-radius: 0;
   border: 0;
 }
+.blogRight .tab-content li:hover {
+  box-shadow: 0px 0px 30px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 0 0 0 2px var(--bs-primary);
+    -moz-box-shadow: 0 0 0 2px var(--bs-primary);
+    box-shadow: 0 0 0 2px var(--bs-primary);
+}
 .job-sidebar-list-single {
   margin-top: 50px;
 }
@@ -1246,32 +1249,6 @@ a.read-more:hover {
   font-size: 25px;
   color: var(--bs-primary);
 }
-
-/* .top-company-list .company-list-details {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-top: 3px;
-}
-
-.company-list-details > h3 {
-  font-size: 18px;
-  text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  margin-top: 14px;
-  margin-bottom: 5px;
-  color: #202020;
-}
-
-.top-company-list .company-list-details > h3 > a {
-  color: #202020;
-}
-
-.company-list-details p {
-  display: inline-block;
-  margin-right: 10px;
-} */
 
 
 /*================================================
@@ -1324,6 +1301,58 @@ a.read-more:hover {
 }
 .ourBlog .news-img-height {
   height: 400px !important;
+}
+.ourBlog .blogLeft {
+  background-color: #e9e9ef;
+}
+.blogRight .card {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.blogRight .card .card-body {
+  padding: 0;
+}
+.blogRight .tab-content li, .sidebar-list-single {
+  display: block;
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0px 20px 40px rgb(0 0 0 / 5%);
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+}
+.ourBlog .job-company-item {
+  margin-bottom: -7px;
+}
+.ourBlog .job-company-content {
+  width: 70%;
+}
+.ourBlog .job-company-logo {
+  border-radius: 0;
+  height: 95px;
+  width: auto;
+}
+.ourBlog .job-company-name {
+  color: #000;
+}
+.ourBlog .job-company-logo {
+  position: relative;
+  background: #fff;
+  border: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: inline-block;
+}
+.ourBlog .text-muted {
+  color: var(--bs-primary)!important;
+  font-size: 14px;
+}
+
+.company-list-details p {
+  display: inline-block;
+  margin-right: 10px;
+}
+.job-company-logo img {
+  height: 100%;
 }
 .card-img-top {
   width: 100%;
@@ -1693,6 +1722,13 @@ span.text-gray {
   margin-bottom: 5px;
   color: #202020;
 }
+.collapse:not(.show) {
+  display: block;
+}
+.showCategory {
+  color: #000;
+  font-size: 14px;
+}
 /*================================================
 Responsive
 ==================================================*/
@@ -1725,6 +1761,9 @@ Responsive
     z-index: 2000;
     margin-top: -10px;
   }
+  .collapse:not(.show) {
+    display: none;
+  }
   .navIcon {
     display: block;
   }
@@ -1737,6 +1776,9 @@ Responsive
     cursor: pointer;
     color: #fff;
     display: none;
+  }
+  .jobguru-banner-area {
+    padding-bottom: 50px;
   }
   a.signUp-btn {
     color: #fff !important;
@@ -1908,6 +1950,9 @@ Responsive
   }
   header ul li a {
     color: #000000 !important;
+  }
+  header ul li a:hover {
+    color: #fff !important;
   }
   .banner-text {
     top: 25%;
