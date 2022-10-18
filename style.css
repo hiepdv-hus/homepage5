@@ -589,7 +589,7 @@ li {
 }
 
 .forsticky {
-    background: #111827;
+    background: linear-gradient(248.78deg, #050C38 8.36%, #0E164E 103.63%);
     position: absolute;
     left: 0;
     top: 0;
@@ -607,7 +607,7 @@ li {
     position: fixed;
     left: 0;
     top: 0;
-    background: #111827;
+    background: linear-gradient(248.78deg, #050C38 8.36%, #0E164E 103.63%);
     -ms-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     -o-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
@@ -637,7 +637,7 @@ header,
 }
 
 .site-logo img {
-    width: 9rem;
+    width: 5rem;
 }
 
 img.non-stick-logo {

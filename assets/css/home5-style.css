@@ -107,7 +107,7 @@ p {
   border-radius: 4px;
   transition: .3s;
   border: 1px solid var(--bs-primary);
-  width: 100%;
+  border-radius: 99px;
 }
 .jobguru-btn:hover {
   color: #fff;
@@ -597,7 +597,7 @@ header,
 }
 
 .site-logo img {
-  width: 9rem;
+  width: 5rem;
 }
 
 .jobguru-header-area.stick-top.sticky .non-stick-logo {
@@ -1255,14 +1255,14 @@ a.read-more:hover {
 13 - VIDEO AREA CSS
 ==================================================*/
 
-.jobguru-video-area {
+/* .jobguru-video-area {
   background: #e8effd;
   background-size: cover;
   position: relative;
   z-index: 1;
   padding: 50px;
   border-radius: 20px;
-}
+} */
 
 .video-container {
   text-align: center;
@@ -1876,9 +1876,6 @@ Responsive
   .banner-text {
     top: 20%;
   }
-  .jobguru-video-area {
-    padding-top: 70px;
-  }
   .header-right-menu ul li a {
     color: #000;
     text-align: center;
@@ -1960,9 +1957,6 @@ Responsive
   .single-footer-widget {
     margin: 30px 0;
   }
-  .jobguru-video-area {
-    padding-top: 70px;
-  }
   .jobguru-header-area {
     padding: 10px 0;
   }
@@ -2033,15 +2027,9 @@ Responsive
   .jobguru-responsive-menu {
     display: block;
   }
-  .jobguru-video-area {
-    height: 500px;
-  }
 }
 
 @media only screen and (max-width: 480px) {
-  .jobguru-video-area {
-    height: 500px;
-  }
   .featured_company .top-company-list {
     display: block;
     text-align: center;
