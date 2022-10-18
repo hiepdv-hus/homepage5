@@ -562,7 +562,9 @@ select {
   width: 100%;
   z-index: 12;
 }
-
+.jobguru-banner-bottom {
+  margin-top: -13px;
+}
 .forsticky.sticky {
   position: fixed;
   left: 0;
