@@ -599,7 +599,7 @@ header,
 }
 
 .site-logo img {
-  width: 5rem;
+  width: 2.5rem;
 }
 
 .jobguru-header-area.stick-top.sticky .non-stick-logo {
@@ -1366,7 +1366,9 @@ a.read-more:hover {
   top: 5px;
   right: 5px;
 }
-
+.dropdown-menu a {
+  color: #000 !important;
+}
 .news-text-muted {
   background-color: var(--bs-primary);
   color: #fff;
@@ -1851,9 +1853,6 @@ Responsive
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .menu-animation {
-    padding-top: .5rem;
-  }
   .jobguru-header-area.stick-top.sticky .header-right-menu ul li a,
 .jobguru-header-area.stick-top.sticky .header-menu ul li a {
   color: #4a6375;
@@ -1864,6 +1863,7 @@ Responsive
 }
   .menuRight span {
     display: block;
+    padding-top: 10px;
   }
   .jobguru-responsive-menu {
     display: block;
@@ -1914,11 +1914,14 @@ Responsive
 }
 
 @media (max-width: 767px) {
-  /* .company-list-details {
-    margin: 1.5rem 0;
-  } */
+  .jobguru-btn {
+    display: block;
+    margin: 0 !important;
+    margin-top: 20px !important;
+  }
   .jobguru-banner-bottom {
-    margin-top: -10px;
+    height: 18px;
+    margin-top: -22px;
   }
   .subscribe-inp {
     width: 100%;
@@ -1961,6 +1964,7 @@ Responsive
   }
   .jobguru-header-area {
     padding: 10px 0;
+    padding-top: 5px;
   }
   .jobguru-header-area .container-fluid {
     padding: 0;
@@ -1975,7 +1979,7 @@ Responsive
     font-weight: 500;
   }
   .site-logo img {
-    width: 7rem;
+    width: 2rem;
   }
   .slicknav_nav {
     position: absolute;
